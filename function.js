@@ -10,9 +10,9 @@ function cleanDisplay() {
 }
 
 function maiorNumero(array) {
-    let element = array[i];
+    let element = array[0];
     for (let i = 0; i < array.length; i++) {
-        if (array[i] > array[i+1]) {
+        if (array[i] >= array[i+1]) {
             element = array[i]
         }
     }
@@ -33,6 +33,8 @@ function operation() {
     }
 
     if (cont > 2) {
+        console.log('entrou');
+        
         maiorNumero(valueSplited)
     }
     const num1 = parseInt(valueSplited[0])
