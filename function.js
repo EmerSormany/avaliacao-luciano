@@ -21,10 +21,6 @@ function maiorNumero(array) {
 
 function operation() {
     const value = document.getElementById("display").value
-    if (!value) {
-        document.getElementById("display").value = `ERROR`
-        return 
-    }
     const valueSplited = value.split("")
     let cont = 0
 
